@@ -4,13 +4,13 @@ public class User {
 
     private String id=null;
     private String name;
-    private String lasName;
+    private String lastName;
     private String email;
     private String createdAt;
 
-    public User(String name, String lasName, String email, String createdAt){
+    public User(String name, String lastName, String email, String createdAt){
         this.name= name;
-        this.lasName=lasName;
+        this.lastName=lastName;
         this.email=email;
         this.createdAt=createdAt;
     }
@@ -19,7 +19,24 @@ public class User {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
     public String getId() {
         return id;
     }
+
 }

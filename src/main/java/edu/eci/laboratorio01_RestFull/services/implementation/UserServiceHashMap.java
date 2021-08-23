@@ -19,7 +19,8 @@ public class UserServiceHashMap implements UserService {
     public User create(User user) {
         String newId = generateId().toString();
         user.setId(newId);
-        return Users.put(newId, user);
+        Users.put(newId, user);
+        return user;
     }
 
     private Integer generateId() {
@@ -47,6 +48,7 @@ public class UserServiceHashMap implements UserService {
     @Override
     public User update(User user, String userId) {
         user.setId(userId);
-        return Users.put(userId,user);
+        Users.put(userId,user);
+        return user;
     }
 }

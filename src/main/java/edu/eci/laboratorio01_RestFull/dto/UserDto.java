@@ -3,13 +3,13 @@ package edu.eci.laboratorio01_RestFull.dto;
 public class UserDto {
 
     private String name;
-    private String lasName;
+    private String lastName;
     private String email;
     private String createdAt;
 
-    public UserDto(String name, String lasName,String email,String createdAt){
+    public UserDto(String name, String lastName,String email,String createdAt){
        this.name= name;
-       this.lasName=lasName;
+       this.lastName=lastName;
        this.email=email;
        this.createdAt=createdAt;
     }
@@ -18,8 +18,8 @@ public class UserDto {
         return name;
     }
 
-    public String getLasName() {
-        return lasName;
+    public String getLastName() {
+        return lastName;
     }
 
     public String getEmail() {

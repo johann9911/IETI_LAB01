@@ -7,7 +7,7 @@ public class MapperClasses {
 
     public static User toUser(UserDto userDto){
         return new User(userDto.getName(),
-                userDto.getLasName(),
+                userDto.getLastName(),
                 userDto.getEmail(),
                 userDto.getCreatedAt()
         );
